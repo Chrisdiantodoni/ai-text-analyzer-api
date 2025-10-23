@@ -4,7 +4,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Salin dependencies dan install
-COPY app/requirements.txt .
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Salin seluruh kode aplikasi
