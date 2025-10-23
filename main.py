@@ -22,6 +22,10 @@ class CompareRequest(BaseModel):
     text1: str
     text2: str
 
+@app.get("/")
+def index():
+    return {"message": "Welcome to the AI Text Analyzer API"}
+
 
 @app.post("/sentiment")
 def analyze_sentiment(request: TextRequest):
